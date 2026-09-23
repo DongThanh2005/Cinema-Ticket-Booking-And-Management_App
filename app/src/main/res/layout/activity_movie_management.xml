@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:background="#FBFBFB">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="#D22323">
+            <ImageButton
+                android:id="@+id/imgBack"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_back"
+                android:rotation="180"
+                android:scaleType="centerInside"
+                android:background="#D22323" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quản lý phim"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:autoSizeMinTextSize="18sp"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="1"
+                android:autoSizeStepGranularity="1sp"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchPhim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_search"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            app:queryHint="Tìm kiếm phim....."
+            app:iconifiedByDefault="false"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+            <Button
+                android:id="@+id/btnThemPhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Thêm phim"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
+            android:id="@+id/rvMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
