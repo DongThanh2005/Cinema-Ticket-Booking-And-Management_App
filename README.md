@@ -23,6 +23,6 @@ An Android application for booking and managing cinema tickets.
 
 ## Team
 - Team Size: 2
-- Role: Android Developer
+- Role: UI/UX Design & Android Developer
 
 ## Screenshots
